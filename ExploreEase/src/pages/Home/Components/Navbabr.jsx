@@ -23,21 +23,22 @@ const Navbabr = () => {
         {
             menu: 'Registration',
             link: '/registration',
+        },
+        {
+            menu: 'Extra',
+            link: '/registration',
         }
     ]
 
     return (
-        <div className='w-full'>
-            <div>
-                <h1>ExploreEase</h1>
-            </div>
-            <div className=''>
-                {
-                    navMenu?.map((menus, index) => 
-                        <Link key={index} className=''>{ menus.menu }</Link>
-                    )
-                }
-            </div>
+        <div className='grid grid-cols-6 text-center justify-between items-center px-4 md:px-10 bg-gray-300 py-8'>
+            {
+                navMenu?.map((nav, index) => 
+                    <li className={`list-none ${index % 2 !== 0 && index !== navMenu.length - 1 ? "border-x-2" : index === navMenu.length - 1 ? 'border-l-2':'none'}`}>
+                        <Link>{ nav?.menu }</Link>
+                    </li>
+                )
+            }
         </div>
     )
 }
