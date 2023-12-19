@@ -5,6 +5,7 @@ import TopDestination from './Components/TopDestination'
 import ExploreTheWorld from './Components/WxploreTheWorld'
 import FreshlyAddedPackage from './Components/FreshlyAddedPackage'
 import MainSlider from './Components/MainSlider'
+import SpecialOffer from './Components/SpecialOffer'
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <TopDestination />
             <ExploreTheWorld />
             <FreshlyAddedPackage />
+            <SpecialOffer />
         </div>
     )
 }
