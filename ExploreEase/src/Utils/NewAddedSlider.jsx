@@ -19,7 +19,7 @@ export default function NewAddedSlider() {
         <>
             <div className='px-4 md:p-10 my-10'>
                 <Swiper
-                    slidesPerView={1}
+                    slidesPerView={4}
                     spaceBetween={10}
                     pagination={{
                         clickable: true,
@@ -31,20 +31,20 @@ export default function NewAddedSlider() {
                     }}
                     navigation={true}
                     clickable={true}
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                        768: {
-                            slidesPerView: 4,
-                            spaceBetween: 40,
-                        },
-                        // 1024: {
-                        //     slidesPerView: 5,
-                        //     spaceBetween: 50,
-                        // },
-                    }}
+                    // breakpoints={{
+                    //     640: {
+                    //         slidesPerView: 2,
+                    //         spaceBetween: 20,
+                    //     },
+                    //     768: {
+                    //         slidesPerView: 4,
+                    //         spaceBetween: 40,
+                    //     },
+                    //     // 1024: {
+                    //     //     slidesPerView: 5,
+                    //     //     spaceBetween: 50,
+                    //     // },
+                    // }}
                     modules={[Pagination, Autoplay, Navigation]}
                     className="mySwiper"
                 >
