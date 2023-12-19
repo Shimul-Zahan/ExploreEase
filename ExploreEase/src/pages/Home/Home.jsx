@@ -6,6 +6,8 @@ import ExploreTheWorld from './Components/WxploreTheWorld'
 import FreshlyAddedPackage from './Components/FreshlyAddedPackage'
 import MainSlider from './Components/MainSlider'
 import SpecialOffer from './Components/SpecialOffer'
+import Subscribe from './Components/Subscribe'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
     return (
@@ -17,6 +19,8 @@ const Home = () => {
             <ExploreTheWorld />
             <FreshlyAddedPackage />
             <SpecialOffer />
+            <Subscribe />
+            <Footer />
         </div>
     )
 }
