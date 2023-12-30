@@ -12,10 +12,19 @@ const Hero = () => {
                         Eat, Shop, Visit interesting places around the world.</p>
                     <p className='bg-gray-100 text-[#f68349] rounded-full text-lg px-5 py-2 w-[33%]'>Book A Trip Now!</p>
                     <div className='lg:h-32 lg:w-[800px] bg-gray-200 z-10 items-center absolute bottom-20 rounded-2xl grid grid-cols-4'>
-                        <h1 className='h-full w-full flex justify-center items-center'>Destination</h1>
-                        <h1 className='h-full w-full flex justify-center items-center'>Duration</h1>
-                        <h1 className='h-full w-full flex justify-center items-center'>Date</h1>
-                        <h1 className='bg-red-500 h-full w-full flex justify-center items-center rounded-r-xl'>Tour search here...</h1>
+                        <div className='flex flex-col justify-center items-center gap-2 px-5'>
+                            <h1 className='h-full'>Destination</h1>
+                            <input type="text" placeholder="Type here" className="input input-bordered input-sm w-full max-w-xs" />
+                        </div>
+                        <div className='flex flex-col justify-center items-center gap-2 px-5'>
+                            <h1 className='h-full'>Duration</h1>
+                            <input type="time" placeholder="Type here" className="input input-bordered input-sm w-full max-w-xs" />
+                        </div>
+                        <div className='flex flex-col justify-center items-center gap-2 px-5'>
+                            <h1 className='h-full'>Date</h1>
+                            <input type="date" placeholder="Type here" className="input input-bordered input-sm w-full max-w-xs" />
+                        </div>
+                        <h1 className='bg-red-500 cursor-pointer h-full w-full flex justify-center items-center rounded-r-xl'>Tour search here...</h1>
                     </div>
                 </div>
                 <div className="">
