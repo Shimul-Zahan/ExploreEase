@@ -24,7 +24,7 @@ const Hero = () => {
                             <h1 className='h-full'>Date</h1>
                             <input type="date" placeholder="Type here" className="input input-bordered input-sm w-full max-w-xs" />
                         </div>
-                        <h1 className='bg-red-500 cursor-pointer h-full w-full flex justify-center items-center rounded-r-xl'>Tour search here...</h1>
+                        <h1 className='bg-red-500 cursor-pointer h-full w-full flex justify-center items-center rounded-r-xl'>Tour search here now...</h1>
                     </div>
                 </div>
                 <div className="">
