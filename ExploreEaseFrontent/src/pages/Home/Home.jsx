@@ -9,6 +9,7 @@ import SpecialOffer from './Components/SpecialOffer'
 import Subscribe from './Components/Subscribe'
 import Footer from '../Footer/Footer'
 import Packages from './Components/Packages'
+import TourList from './Components/TourList'
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <MainSlider />
             <TopDestination />
             <Packages />
+            <TourList />
             <ExploreTheWorld />
             <FreshlyAddedPackage />
             <SpecialOffer />
