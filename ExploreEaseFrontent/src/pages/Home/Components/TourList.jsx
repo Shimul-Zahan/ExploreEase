@@ -1,7 +1,4 @@
 import React from 'react'
-import image1 from '../../../assets/special-offer/h5-img-1.jpg'
-import image2 from '../../../assets/special-offer/h5-img-2 (1).jpg'
-import image3 from '../../../assets/special-offer/h5-img-3.jpg'
 
 const TourList = () => {
     return (

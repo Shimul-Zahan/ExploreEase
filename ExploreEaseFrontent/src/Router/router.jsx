@@ -6,6 +6,7 @@ import {
 import MainLayout from '../Layout/MainLayout';
 import Home from '../pages/Home/Home';
 import Tour from '../pages/Tour/Tour';
+import TopDestination from '../pages/TopDestination/TopDestination';
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path: '/tour',
                 element: <Tour />
+            },
+            {
+                path: '/top-destination',
+                element: <TopDestination />
             },
         ]
     }

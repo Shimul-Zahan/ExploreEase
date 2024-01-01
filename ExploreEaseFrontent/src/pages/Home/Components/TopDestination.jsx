@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import imgage1 from '../../../assets/popular-destination/cat-america.jpg'
 import imgage2 from '../../../assets/popular-destination/cat-asia.jpg'
 import imgage3 from '../../../assets/popular-destination/cat-egypt.jpg'
@@ -20,7 +21,9 @@ const TopDestination = () => {
                     <h1 className='text-2xl font-bold text-white absolute bottom-5 left-1/2 translate-x-[-50%] group-hover:bottom-1/2 duration-700'> South Asia </h1>
                     <div className='text-center text-white space-y-3 absolute -bottom-1/2 group-hover:bottom-10 left-1/2 translate-x-[-50%] duration-700'>
                         <h1>Far far away, behind the word mountains,far from the countries</h1>
-                        <button className='text-blue-400'> View all destination</button>
+                        <Link to='/top-destination'>
+                            <button className='text-blue-400'> View all destination</button>
+                        </Link>
                     </div>
                 </div>
                 <div className='relative group overflow-y-hidden'>
