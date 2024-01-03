@@ -2,10 +2,7 @@ import { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './style.css'
-import { GiLargeDress } from "react-icons/gi";
-import { FaIdeal } from "react-icons/fa";
-import { FcTwoSmartphones } from "react-icons/fc";
-import { MdOutlineSportsBasketball } from "react-icons/md";
+import TopDestinationDetails from '../TopDestinationDetails/TopDestinationDetails';
 
 const ActiveTabs = () => {
 
@@ -36,7 +33,7 @@ const ActiveTabs = () => {
                     }
                 </TabList>
                 <TabPanel>
-                    Comming Soon
+                    <TopDestinationDetails />
                 </TabPanel>
                 <TabPanel>
                     Comming Soon

@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbabr from '../Home/Components/Navbabr'
-import ActiveTabs from '../TopDestination/ActiveTabs/ActiveTabs'
+import Navbabr from '../../Home/Components/Navbabr'
+import ActiveTabs from '../ActiveTabs/ActiveTabs'
 
 const DestinationDetails = () => {
   return (
