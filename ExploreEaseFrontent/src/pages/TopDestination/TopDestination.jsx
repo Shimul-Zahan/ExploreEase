@@ -3,6 +3,7 @@ import Navbabr from '../Home/Components/Navbabr'
 import Banner from '../../Utils/Banner'
 import Sort from './Sort'
 import Filter from './Filter'
+import { Link } from 'react-router-dom'
 
 
 const TopDestination = () => {
@@ -22,14 +23,16 @@ const TopDestination = () => {
                     </div>
                     <div class="col-span-9 space-y-5">
                         <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
-                            <div className='bg-gray-100 rounded-br-lg rounded-bl-lg overflow-hidden group'>
-                                <img src="https://img.freepik.com/free-vector/colorful-map-asia_23-2147807672.jpg?size=626&ext=jpg&uid=P69727906&ga=GA1.1.435112184.1700343142&semt=ais" alt="" className='rounded-tr-lg rounded-tl-lg h-52 w-full group-hover:scale-[1.1] duration-500' />
-                                <div className='px-4 py-6 space-y-2'>
-                                    <p className='text-xl font-bold'>Africa – Amazing African Safari</p>
-                                    <p>Rating: ****</p>
-                                    <p className='text-base'>From<span className='text-lg text-blue-400'>$1,200</span></p>
+                            <Link to='/tour-details'>
+                                <div className='bg-gray-100 rounded-br-lg rounded-bl-lg overflow-hidden group'>
+                                    <img src="https://img.freepik.com/free-vector/colorful-map-asia_23-2147807672.jpg?size=626&ext=jpg&uid=P69727906&ga=GA1.1.435112184.1700343142&semt=ais" alt="" className='rounded-tr-lg rounded-tl-lg h-52 w-full group-hover:scale-[1.1] duration-500' />
+                                    <div className='px-4 py-6 space-y-2'>
+                                        <p className='text-xl font-bold'>Africa – Amazing African Safari</p>
+                                        <p>Rating: ****</p>
+                                        <p className='text-base'>From<span className='text-lg text-blue-400'>$1,200</span></p>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                             <div className='bg-gray-100 rounded-br-lg rounded-bl-lg overflow-hidden group'>
                                 <img src="https://img.freepik.com/free-vector/colorful-map-asia_23-2147807672.jpg?size=626&ext=jpg&uid=P69727906&ga=GA1.1.435112184.1700343142&semt=ais" alt="" className='rounded-tr-lg rounded-tl-lg h-52 w-full group-hover:scale-[1.1] duration-500' />
                                 <div className='px-4 py-6 space-y-2'>
