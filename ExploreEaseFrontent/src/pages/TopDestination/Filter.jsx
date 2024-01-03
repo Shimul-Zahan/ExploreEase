@@ -1,5 +1,6 @@
 import React from 'react'
 import { SlCalender } from "react-icons/sl";
+import RatingSearch from './RatingSearch';
 
 const Filter = () => {
     return (
@@ -9,7 +10,7 @@ const Filter = () => {
                 <div className="space-y-2 px-5">
                     <div className='w-full text-lg lg:px-0 pb-5'>
                         <h1 className='text-base text-indigo-700'>Keyword</h1>
-                        <div className="relative border rounded-md w-full mt-2">
+                        <div className="border rounded-md w-full mt-2">
                             <span className="absolute inset-y-0 right-0 flex items-center pl-2">
                                 <svg
                                     className="w-5 h-5 text-gray-500"
@@ -30,7 +31,7 @@ const Filter = () => {
                             <input
                                 type="text"
                                 placeholder="Search"
-                                className="w-full p-2 border-none focus:outline-none focus:ring focus:border-blue-300"
+                                className="w-full p-2 border-none focus:outline-none"
                             />
                         </div>
                     </div>
@@ -47,29 +48,17 @@ const Filter = () => {
                     </div>
                     <div className='w-full text-lg lg:px-0 pb-5'>
                         <h1 className='text-base text-indigo-700'>Date</h1>
-                        <div className="relative border rounded-md w-full mt-2">
+                        <div className="border rounded-md w-full mt-2">
                             <input
                                 type="date"
                                 placeholder="Search"
-                                className="w-full p-2 border-none focus:outline-none focus:ring focus:border-blue-300"
+                                className="w-full p-2 border-none focus:outline-none"
                             />
                         </div>
                     </div>
                     <div className='w-full text-lg lg:px-0 pb-5'>
-                        <h1 className='text-base text-indigo-700'>Rating</h1>
-                        <select
-                            className="mt-1.5 w-full px-2 py-3 rounded-lg border-black border-2 text-gray-700 sm:text-sm"
-                        >
-                            <option disabled className='text-lg' value="default">Rating</option>
-                            <option className='text-lg' value="dhaka">Dhaka</option>
-                            <option className='text-lg' value="rajshahi">Rajshahi</option>
-                            <option className='text-lg' value="chattagram">Chittagone</option>
-                            <option className='text-lg' value="barisal">Barisal</option>
-                            <option className='text-lg' value="sylet">Sylet</option>
-                            <option className='text-lg' value="rangpur">Rangpur</option>
-                            <option className='text-lg' value="khulna">Khulna</option>
-                            <option className='text-lg' value="mymensingh">Mymensingh</option>
-                        </select>
+                        <h1 className='text-base text-indigo-700 mb-3'>Rating</h1>
+                        <RatingSearch />
                     </div>
                     <div className="border-gray-200 bg-white">
                         <h1 className='text-lg pb-2'>Filter By Price</h1>
