@@ -33,13 +33,15 @@ const ActiveTabs = () => {
                     }
                 </TabList>
                 <TabPanel>
-                    <TopDestinationDetails />
+                    <div className='py-5'>
+                        <TopDestinationDetails />
+                    </div>
                 </TabPanel>
                 <TabPanel>
                     Comming Soon
                 </TabPanel>
                 <TabPanel>
-                    <div className='py-10'>
+                    <div className='py-5'>
                         <img src="https://img.freepik.com/free-vector/colored-political-world-map_23-2148319222.jpg?w=996&t=st=1704306347~exp=1704306947~hmac=49d3962de32f93588493506ac621585a780174fd4936b7704ef305caa5d3bf41" alt="" className='w-full lg:h-screen' />
                     </div>
                 </TabPanel>
