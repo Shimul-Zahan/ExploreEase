@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbabr from '../Home/Components/Navbabr'
 import Banner from '../../Utils/Banner'
+import Sort from './Sort'
 
 
 const TopDestination = () => {
@@ -13,7 +14,7 @@ const TopDestination = () => {
             <div className='p-4 lg:px-10 lg:py-16'>
                 <div class="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-8">
                     <div className='col-span-3 space-y-10'>
-                        <div>
+                        <div className='space-y-5'>
                             <div class="border space-y-3">
                                 <div className='flex justify-start items-center gap-2 bg-gray-300 py-3 px-5 font-bold'><h1>SORT BY</h1></div>
                                 <div className="space-y-2 px-5">
@@ -108,6 +109,7 @@ const TopDestination = () => {
                                     
                                 </div>
                             </div>
+                            <Sort />
                         </div>
                     </div>
                     <div class="col-span-9 space-y-5">
