@@ -8,6 +8,7 @@ import Home from '../pages/Home/Home';
 import TopDestination from '../pages/TopDestination/TopDestination';
 import DestinationDetails from '../pages/TopDestination/DestinationDetails/DestinationDetails';
 import About from '../pages/About/About';
+import Services from '../pages/Services/Services';
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About />
+            },
+            {
+                path: '/services',
+                element: <Services />
             },
             {
                 path: '/top-destination',
