@@ -9,6 +9,7 @@ import TopDestination from '../pages/TopDestination/TopDestination';
 import DestinationDetails from '../pages/TopDestination/DestinationDetails/DestinationDetails';
 import About from '../pages/About/About';
 import Services from '../pages/Services/Services';
+import MountainHome from '../pages/MountainHome/MountainHome';
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: '/tour-details',
                 element: <DestinationDetails />
+            },
+            {
+                path: '/mountain-home',
+                element: <MountainHome />
             },
         ]
     }
