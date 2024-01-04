@@ -10,6 +10,7 @@ import About from '../pages/About/About';
 import Services from '../pages/Services/Services';
 import MountainHome from '../pages/MountainHome/MountainHome';
 import HolidayHome from '../pages/HolidayHome/HolidayHome';
+import CampaignHome from '../pages/CampaignHome/CampaignHome';
 
 const router = createBrowserRouter([
     {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
             {
                 path: '/holiday-home',
                 element: <HolidayHome />
+            },
+            {
+                path: '/campaign-home',
+                element: <CampaignHome />
             },
         ]
     }
