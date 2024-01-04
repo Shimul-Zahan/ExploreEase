@@ -1,7 +1,6 @@
 import React from 'react'
 import {
     createBrowserRouter,
-    RouterProvider,
 } from "react-router-dom";
 import MainLayout from '../Layout/MainLayout';
 import Home from '../pages/Home/Home';
@@ -10,6 +9,7 @@ import DestinationDetails from '../pages/TopDestination/DestinationDetails/Desti
 import About from '../pages/About/About';
 import Services from '../pages/Services/Services';
 import MountainHome from '../pages/MountainHome/MountainHome';
+import HolidayHome from '../pages/HolidayHome/HolidayHome';
 
 const router = createBrowserRouter([
     {
@@ -40,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: '/mountain-home',
                 element: <MountainHome />
+            },
+            {
+                path: '/holiday-home',
+                element: <HolidayHome />
             },
         ]
     }
