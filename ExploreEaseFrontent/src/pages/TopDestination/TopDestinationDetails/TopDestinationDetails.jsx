@@ -170,11 +170,19 @@ const TopDestinationDetails = () => {
                         <h1 className='text-2xl font-bold mb-5'>Book With Confidence</h1>
                         <div className='flex justify-start items-center gap-1 mb-2'>
                             <BsTelephoneInbound />
-                            <p>+880 1714760739</p>
+                            <p>Cusomer care available 24/7</p>
                         </div>
-                        <div className='flex justify-start items-center gap-1'>
+                        <div className='flex justify-start items-center gap-1 mb-2'>
                             <IoMdMailOpen />
-                            <p>abc.fu**@gmail.com</p>
+                            <p>Best price guarranty</p>
+                        </div>
+                        <div className='flex justify-start items-center gap-1 mb-2'>
+                            <IoMdMailOpen />
+                            <p>Hand picked tours and activities</p>
+                        </div>
+                        <div className='flex justify-start items-center gap-1 mb-2'>
+                            <IoMdMailOpen />
+                            <p>Free travel insurance</p>
                         </div>
                     </div>
 

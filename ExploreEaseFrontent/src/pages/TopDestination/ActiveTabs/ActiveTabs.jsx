@@ -3,6 +3,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './style.css'
 import TopDestinationDetails from '../TopDestinationDetails/TopDestinationDetails';
+import FAQ from '../TopDestinationDetails/FAQ';
+import Reviews from '../TopDestinationDetails/Reviews/Reviews';
 
 const ActiveTabs = () => {
 
@@ -21,14 +23,14 @@ const ActiveTabs = () => {
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
                     {
-                        menuTabs?.map((tab, index) => 
+                        menuTabs?.map((tab, index) =>
                             <Tab>
                                 <div className="tooltip" data-tip="PHONES & ACCESS">
                                     <button className="font-bold px-5 py-2 rounded-full">
                                         {tab}
                                     </button>
                                 </div>
-                            </Tab>  
+                            </Tab>
                         )
                     }
                 </TabList>
@@ -46,10 +48,14 @@ const ActiveTabs = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    Comming Soon 5
+                    <div className="py-5">
+                        <FAQ />
+                    </div>
                 </TabPanel>
                 <TabPanel>
-                    Comming Soon 6
+                    <div className="py-5">
+                        <Reviews />
+                    </div>
                 </TabPanel>
             </Tabs>
         </div>

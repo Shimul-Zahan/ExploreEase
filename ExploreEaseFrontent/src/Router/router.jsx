@@ -7,6 +7,7 @@ import MainLayout from '../Layout/MainLayout';
 import Home from '../pages/Home/Home';
 import TopDestination from '../pages/TopDestination/TopDestination';
 import DestinationDetails from '../pages/TopDestination/DestinationDetails/DestinationDetails';
+import About from '../pages/About/About';
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home />
+            },
+            {
+                path: '/about',
+                element: <About />
             },
             {
                 path: '/top-destination',
